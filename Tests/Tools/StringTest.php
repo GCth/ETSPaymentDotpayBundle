@@ -2,7 +2,7 @@
 
 namespace ETS\PurchaseBundle\Tests\Tools;
 
-use ETS\Payment\DotpayBundle\Tools\String;
+use ETS\Payment\DotpayBundle\Tools\StringTools;
 
 /*
  * Copyright 2012 ETSGlobal <ecs@etsglobal.org>
@@ -47,7 +47,7 @@ class StringTest extends \PHPUnit_Framework_TestCase
      */
     public function testNormaize($input, $expected)
     {
-        $tool = new String();
+        $tool = new StringTools();
 
         $this->assertEquals($expected, $tool->normalize($input));
     }
