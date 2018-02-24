@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "symfony/symfony": "~2.3",
+        "symfony/symfony": ">=2.3 <4.0",
         "symfony/framework-bundle": "~2.3",
         "jms/payment-core-bundle": "~1.0"
     },
