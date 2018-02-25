@@ -3,6 +3,7 @@
 namespace ETS\Payment\DotpayBundle\Plugin;
 
 use Symfony\Component\Routing\Router;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 use JMS\Payment\CoreBundle\Model\ExtendedDataInterface;
 use JMS\Payment\CoreBundle\Model\PaymentInstructionInterface;
@@ -145,7 +146,7 @@ class DotpayDirectPlugin extends AbstractPlugin
         $extendedData = $transaction->getExtendedData();
         $urlc         = $this->router->generate('ets_payment_dotpay_callback_urlc', array(
             'id' => $instruction->getId()
-        ), true);
+        ), UrlGeneratorInterface::ABSOLUTE_URL);
 
         $datas = array(
             'id'                => $this->token->getId(),
