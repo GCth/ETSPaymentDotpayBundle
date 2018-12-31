@@ -1,5 +1,5 @@
 {
-    "name": "ets/payment-dotpay-bundle",
+    "name": "radek-baczynski/payment-dotpay-bundle",
     "type": "symfony-bundle",
     "description": "Payment Bundle providing access to the Dotpay API",
     "keywords": ["payment", "dotpay"],
@@ -13,8 +13,8 @@
     ],
     "require": {
         "php": ">=5.4",
-        "symfony/symfony": "~2.3",
-        "symfony/framework-bundle": "~2.3",
+        "symfony/symfony": ">=2.3 <4.0",
+        "symfony/framework-bundle": ">=2.3",
         "jms/payment-core-bundle": "~1.0"
     },
     "require-dev": {

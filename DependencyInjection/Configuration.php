@@ -52,7 +52,7 @@ class Configuration implements ConfigurationInterface
                                 ->defaultValue('https://ssl.dotpay.pl/')
                                 ->cannotBeEmpty()
                                 ->validate()
-                                    ->ifNotInArray(array('https://ssl.dotpay.pl/', 'https://ssl.dotpay.eu/'))
+                                    ->ifNotInArray(array('https://ssl.dotpay.pl/', 'https://ssl.dotpay.eu/', 'https://ssl.dotpay.pl/test_payment/'))
                                     ->thenInvalid('Invalid dotpay url "%s"')
                                 ->end()
                             ->end()
